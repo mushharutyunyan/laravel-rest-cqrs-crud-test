@@ -21,11 +21,7 @@ php artisan passport:client --password
     - press 1 and press enter
 - Which user provider should this client use to retrieve users? [users]:
     - press enter
-```bash
-Password grant client created successfully.
-Client ID: 945cbfe9-eb0b-4e59-91d0-d5ce74ac4a33
-Client secret: aRX9QxACKr51QyUi0Hjc6kPb5q9CJedexgESVcpc
-```
+
 Credentials need to be added in Client application .env file
 ```bash
 Default username password
