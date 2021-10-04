@@ -24,6 +24,11 @@ class CommandController extends Controller
         return new PostsResource($post);
     }
 
+    /**
+     * @param PostRequest $request
+     * @param $id
+     * @return PostsResource|\Illuminate\Http\JsonResponse
+     */
     public function update(PostRequest $request, $id)
     {
         $data = $request->all();
@@ -34,6 +39,10 @@ class CommandController extends Controller
         return new PostsResource($post);
     }
 
+    /**
+     * @param $id
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function delete($id)
     {
         $post = Post::byHash($id);
